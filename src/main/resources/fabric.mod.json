@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "weightless",
+	"version": "${version}",
+	"name": "Weightless",
+	"description": "Your armor weighs you down, making you slower. Now you must choose between sacrificing mobility or durability... or somewhere in between?",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/weightless/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.weightless.Weightless"
+		]
+	},
+	"mixins": [
+		"weightless.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
